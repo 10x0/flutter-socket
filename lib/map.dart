@@ -15,7 +15,7 @@ class _MapScreenState extends State<MapScreen> {
   late var _locationData;
 
   final IO.Socket socket = IO.io('https://1afa-110-44-115-142.ngrok-free.app',
-      OptionBuilder().setTransports(['websocket']).build());
+      IO.OptionBuilder().setTransports(['websocket']).build());
 
   @override
   void initState() {
